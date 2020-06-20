@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Notify</string>
+    <string name="title">Reminder Title</string>
+    <string name="message">Reminder Message</string>
+    <string name="queue">Add to Queue</string>
 </resources>

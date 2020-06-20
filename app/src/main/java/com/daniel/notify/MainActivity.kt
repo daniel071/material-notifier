@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     fun notifyButton(view: View){
         var builder = NotificationCompat.Builder(this, "1")
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .setSmallIcon(R.drawable.ic_notification)
             .setContentTitle("Test")
             .setContentText("Message")
             .setPriority(NotificationCompat.PRIORITY_MAX)
