@@ -1,17 +1,20 @@
 package com.daniel.notify
 
-import android.app.AlertDialog
+import android.app.AlarmManager
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
+import android.preference.PreferenceManager
 import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.my_toolbar))
     }
+
 
     fun notifyButton(view: View){
         var builder = NotificationCompat.Builder(this, "1")
@@ -48,9 +52,6 @@ class MainActivity : AppCompatActivity() {
             notify(1, builder.build())
         }
 
-
-
     }
-
 
 }
